@@ -8,9 +8,8 @@ services:
     ports:
       - 8081:8081
     environment:
+      - ME_CONFIG_BASICAUTH=false
       - ME_CONFIG_MONGODB_URL=mongodb+srv://chinthana:chinthana99@chinthana.ydhrjtg.mongodb.net/virtualschool?retryWrites=true&w=majority&appName=Chinthana
-      - ME_CONFIG_BASICAUTH_USERNAME=admin
-      - ME_CONFIG_BASICAUTH_PASSWORD=admin
     networks:
       - mongodb_network
 
